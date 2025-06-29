@@ -1,0 +1,66 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedra, Papel e Tesoura!</title>
+    <body>
+    <header>
+        <h1>Pedra, Papel e Tesoura</h1>
+    </header>
+
+    <main>
+        <div class="game">
+            <button name="pedra">
+                <h2>Pedra</h2>
+                <img src="./pedra2.png" alt="">
+            </button>
+            <button name="papel">
+                <h2>Papel</h2>
+                <img src="./papel2.png" alt="">
+            </button>
+            <button name="tesoura">
+                <h2>Tesoura</h2>
+                <img src="./tesoura2.png" alt="">
+            </button>
+        </div>
+
+        <h2>Pontuação</h2>
+        <div class="scores">
+            <div class="score">
+                <p>Jogador</p>
+                <p id="score1">0</p>
+            </div>
+            <div class="score">
+                <p>Bot</p>
+                <p id="score2">0</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <div class="img">
+                <p>Jogador</p>
+                <img src="./player2.png" name="jogador">
+            </div>
+            <h1>X</h1>
+            <div class="img">
+                <p>Bot</p>
+                <img src="./bot4.png" name="bot">
+            </div>
+        </div>
+
+        <div class="resultP">
+            <p name="result">Resultado:</p>
+        </div>
+
+        <div id="proxima-fase" style="display: none; text-align: center; margin-top: 30px;">
+            <h2 style="color: white;">Parabéns, você finalizou o primeiro teste!</h2>
+            <a href="fase2.html" style="color: yellow; font-weight: bold; font-size: 20px;">Vá para a próxima fase</a>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
