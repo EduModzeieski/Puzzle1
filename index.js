@@ -6,6 +6,11 @@ const botElement = document.querySelector("img[name=bot]");
 const score1Element = document.querySelector("#score1");
 const score2Element = document.querySelector("#score2");
 const resultElement = document.querySelector("p[name=result]");
+const folhaInicial = document.getElementById("folha-inicial");
+const botaoComecar = document.getElementById("comecar");
+
+botaoComecar.addEventListener("click", () => {
+    folhaInicial.style.display = "none";
 
 // Itens do jogo: 0 = Pedra, 1 = Papel, 2 = Tesoura
 let contadorJogador = 0;
@@ -108,5 +113,12 @@ pedraElement.addEventListener("click", () => {
             break;
     }
 
+    
+
     alterarScore();
+
+   
+
+
+});
 });
